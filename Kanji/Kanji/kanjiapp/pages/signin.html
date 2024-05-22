@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="burger"></div>
+        <a class="header__logo"></a>
+    </header>
+
+    <section class="container">
+        <form class="form form-signIn">
+            <h1 class="form__title">Вход</h1>
+            <input class="form__input" autocomplete="off"  pattern="r'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$'" type="email" name="email" placeholder="Email" required>
+            <p class="form__msg-error"></p>
+            <input class="form__input" type="password" name="password" placeholder="Пароль" required>
+            <p class="form__msg-error"></p>
+            <button class="form__submit" type="submit" >Войти</button>
+        </form>
+    </section>
+
+    <footer class ="footer">
+        <nav class="footer__nav">
+            <button class="home"></button>
+            <button class="profile"></button>
+        </nav>
+    </footer>
+    
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
